@@ -47,6 +47,7 @@ public class UserTest {
 
         response.extract().response().prettyPrint();
         assertEquals(200, response.extract().statusCode());
+
         assertEquals(username, response.extract().path("username"));
     }
 
